@@ -1,0 +1,61 @@
+
+/*
+// Para acessar a parte estatica do servido como css, js e imagens
+//app.use('/css', express.static(path.join(__dirname, 'css')));
+//app.use('/js',express.static(path.join(__dirname,'js')));
+//app.use('/img',express.static(path.join(__dirname,'img')));
+
+// estou chamando o funcao anonima que esta com a requisicao express, estou fazerndo um get, o barra representa que estou puxando a informacao na raiz, o req e um paramento da requisicao e o res e a resposta
+/*app.get('/', (req,res) =>{
+  //a funcao anonima vai me retornar a res = resposta da requisicao, que vai retorana o arquivo ao usuario atraves do sendFile, o dirname e por fim o diretorio atual com o index principal
+    res.sendFile(path.join(__dirname,'index.html'))
+});
+    Requisição para bibliotecas do Node.js:
+    - 'express' é usado para criar o servidor e gerenciar rotas, requisições HTTP e middlewares.
+    - 'path' é usado para manipular caminhos de arquivos e diretórios de forma confiável, considerando diferentes sistemas operacionais (Windows, Linux, Mac).
+  
+    const express = require('express');
+    const path = require('path');
+  
+    
+      Criando uma instância do express e salvando na variável 'app'.
+      Essa instância é usada para configurar o servidor e gerenciar rotas.
+      O 'app' será utilizado para definir as rotas e como o servidor irá responder a elas.
+    
+    const app = express();
+  
+    
+      Configurando a rota GET para a raiz ('/').
+      Quando o usuário acessar a URL principal (por exemplo, http://localhost:3000), essa rota será acionada.
+      - 'req' (request) representa a requisição feita pelo cliente (navegador ou outra ferramenta).
+      - 'res' (response) é usado para enviar uma resposta de volta ao cliente.
+    
+    app.get('/', (req, res) => {
+        
+          Usando 'res.sendFile' para enviar o arquivo 'index.html' como resposta.
+          O 'path.join' combina o caminho absoluto do diretório atual ('__dirname') com 'index.html',
+          garantindo que o caminho seja correto independentemente do sistema operacional.
+        
+        res.sendFile(path.join(__dirname, 'index.html'));
+    });
+  
+    
+      Definindo a variável 'PORT' para armazenar a porta onde o servidor vai rodar.
+      Nesse caso, o servidor irá escutar a porta 3000.
+    
+    const PORT = 3000;
+  
+    
+      Iniciando o servidor na porta definida (3000).
+      Quando o servidor começar a rodar, uma mensagem será exibida no console para confirmar que tudo está funcionando.
+      A função de callback é chamada assim que o servidor está pronto para receber requisições.
+    
+    app.listen(PORT, () => {
+        
+          Usando 'console.log' com template literals (crase) para exibir a mensagem,
+          incluindo a porta onde o servidor está rodando.
+        
+        console.log(`Tá funcionando, e está rodando na porta ${PORT}`);
+    });
+  */
+  

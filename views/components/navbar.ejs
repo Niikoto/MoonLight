@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">
+        <img class="icon-nav p-0" src="/img/logo_moonlight_sem_nome.webp" alt="">
+    </a>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                    Imagens
+                </a>
+                <div class="dropdown-menu">
+                    <a href="/fotos" class="dropdown-item">
+                        Fotos
+                    </a>
+                    <a href="/album" class="dropdown-item">
+                        Album
+                    </a>
+                </div>    
+            </li>
+        </ul>
+        
+        <form action="" class="form-inline my-2 my-lg-0 mr-5">
+            <input type="search" class="form-control pesquisa" placeholder="Buscar" aria-label="Buscar">
+            <button class="input-group-text" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+
+        <ul class="navbar-nav mr-2 ml-5 text-center d-flex justify-content-center align-items-center">
+            <li class="nav-link disabled"><p class="mb-0" id="usuario"><%= user.name %></p></li>
+            <li>
+            <button class="nav-btn" type="button" onclick="window.location.href='/perfil'">
+                <% if(user.img){ %>
+                    <img src="<%= "/upload/pictures/"+user.img %>" alt="" class="perfil perfil-home">
+                
+                <% } else{ %>
+                    <img src="/img/person-fill.svg" alt="" class="perfil perfil-home"></button>
+                <% } %>
+            </li>
+        </ul>
+    </div>
+</nav>

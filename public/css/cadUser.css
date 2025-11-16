@@ -1,0 +1,27 @@
+.my-center{
+    position: absolute;
+    top: 15%;
+}
+
+.card{
+    width: 400px;
+}
+
+.icon{
+    width: 250px;
+    height: 250px;
+}
+
+.text-card{
+    width: 200px;
+    font-size: 30px;
+}
+
+.card-null{
+    background-color: unset;
+    border: unset;
+}
+
+.alert{
+    right: 0;
+}

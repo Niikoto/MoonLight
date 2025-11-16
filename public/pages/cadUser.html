@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/full.css">
+    <link rel="stylesheet" href="/css/cadUser.css">
+</head>
+<body>
+    <button class="position-absolute close-second1 mt-2 ml-2" onclick="window.location.href='/'">
+        <i class="bi bi-arrow-left"></i>
+    </button>
+    <div class="d-flex justify-content-center">
+        <div class="my-center">
+            <div class="d-flex justify-content-between" style="width: 1000px;">
+                <!-- bg-color-second está em css/full, define cor de fundo -->
+                <div class="card card-null align-items-center">
+                    <img src="/img/logo_moonlight_com_nome.webp" alt="" class="card-img-top img-fluid icon mt-3">
+                        <div class="card-body">
+                            <h2 class="text-card text-white start-0">De Dia ou De Noite Vivendo com Você</h2>
+                        </div>
+                </div>
+
+                <div class="card bg-color-second3">
+                    <div class="card-body align-items-center">
+                        <form action="/cad" method="post">
+                            <h1 class="text-title text-center text-white">Cadastro</h1>
+                            <div class="form-grup pt-4">
+                                <label class="form-label text-white" for="name">Nome</label>
+                                <input class="form-control" type="text" name="nome" id="name_cad" required>
+                            </div>
+                            <br>
+                            <div class="form-grup">
+                                <label class="form-label text-white" for="email">Email</label>
+                                <input class="form-control" type="email" name="email" id="email_cad" required>
+                            </div>
+                                <br>
+                            <div class="form-grup">    
+                                <label class="form-label text-white" for="senha">Senha</label>
+                                <input class="form-control" type="password" name="senha" id="senha_cad" required min="8">
+                            </div>
+                            <a class="text-primary1" href="#">Esqueci Minha Senha</a>
+                    </div>
+                            <div class="botao d-flex justify-content-end m-4">
+                                <button class="btn btn-primary2 align-items-center" type="submit" style="width: 120px;height: 40px;">Cadastrar</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+</body>
+</html>

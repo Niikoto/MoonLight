@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #292929;
+}
+
+.bg-color-second3{
+    background-color: #676767;
+}
+
+.card{
+    border-radius: 10px;
+}
+
+.btn{
+    border-radius: 100px;
+}
+
+.text-primary1{
+    color: #954CF3;
+}
+
+.btn-primary1{
+    background-color: #954CF3;
+    color: #1B1A1A;
+    text-decoration: none;
+}
+
+.btn-primary2{
+    background-color: #FCEC39;
+    color: #1B1A1A;
+}
+
+.btn-primary3{
+    background-color: #F1124A;
+    color: #1B1A1A;
+    text-decoration: none;
+}
+
+.btn-primary1 a{
+    color: #1B1A1A;
+}
+
+.btn-primary1 a:hover{
+    color: #1B1A1A;
+    text-decoration: none;
+}
+
+.alert{
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-link li{
+    color: #FFFFFF;
+}
+
+p{
+    color: #FFFFFF;
+}
+
+.icon-nav{
+    width: 50px;
+    height: 50px;
+}
+
+.close-second1{
+    color: #1B1A1A;
+    background-color: #954CF3;
+    border-radius: 100%;
+    border: solid #954CF3;
+    text-align: center;
+}
+
+.circulo{
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo-p{
+    width: 150px;
+    height: 150px;
+}
+
+.absolute-btn-right-b{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Modal css */
+.modal-content{
+    background-color: #1B1A1A;
+    border-radius: 10px;
+}
+
+.modal-header, .modal-footer{
+    border: unset;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.label-img{
+    background-color: #292929;
+    height: 200px;
+    text-align: center;
+    display: block;
+    padding-top: 18%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+h1{
+    color: #FFFFFF;
+}
+
+.modal-form{
+    background-color: #292929;
+    border-radius: 10px;
+    border: unset;
+    color: #FFFFFF;
+}

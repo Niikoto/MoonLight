@@ -1,0 +1,31 @@
+<button class="btn btn-primary1 absolute-btn-right-b d-flex justify-content-between align-items-center text-center" type="button" data-toggle="modal" data-target="#add-img">
+    <i class="bi bi-camera-fill pr-2 text-white"></i><p class="mb-0">Adicione foto</p>
+</button>
+
+<div class="modal fade" id="add-img" tabindex="-1" aria-label="add-img" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header d-flex justify-content-center">
+                <h1 class="modal-title">
+                    Adicione sua imagem
+                </h1>
+            </div>
+            <form action="/insert-img" method="post" enctype="multipart/form-data">
+                <div class="modal-body d-flex justify-content-center text-center flex-column overflow-auto">
+                    <label class="text-left text-white" for="titulo_img">Titulo da imagem</label>
+                    <input class="form-control modal-form" type="text" name="titulo_img" id="titulo_img">
+                    <br>
+                    <label class="form-label text-white label-img" for="nome_imagem">Arraste ou escolha sua imagem</label>
+                    <input type="file" name="nome_imagem" id="nome_imagem">
+
+                    <label class="text-left text-white" for="descricao_img">Descrição</label>
+                    <textarea class="descricao form-control modal-form" type="text" name="descricao_img" id="descricao_img"></textarea>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button class="btn btn-primary1" type="button" data-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-primary2" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.perfil{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-outline-purple{
+    background-color: #954CF3;
+    color: white;
+}
+
+.nav-btn{
+    border: unset;
+    background-color: unset;
+    border-radius: 100px;
+}
+
+.perfil-home{
+    border: solid #FCEC39 3px;
+    background-color: #FCEC39;
+}
+
+.pesquisa{
+    border-radius: 100px 0 0 100px;
+    border: solid #954CF3 1px;
+}
+
+.input-group-text{
+    border-radius: 0 100px 100px 0;
+    background-color: #954CF3;
+    color: white;
+    border: solid #954CF3 1px;
+}

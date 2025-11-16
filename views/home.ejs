@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/full.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="/img/logo_moonlight_sem_nome.webp">
+</head>
+<body>
+    <%- include('components/navbar') %>
+    <%- include('components/button_add_img') %>
+    
+    <script>/*
+        fetch('/user-info')//requisaicao http sobre '/user-info'
+            .then(response => {//quando obtiver resposta
+                if(response.ok){//se a resposta estiver ok
+                    return response.json();//converte a resposta para json
+                }
+                else {
+                    window.location.href='/?error=authenticad';//caso nao encontre nome de usuario voltar para tela de login
+                }
+            })
+            .then(data =>{//quando obter data
+                document.getElementById('usuario').innerText = data.name;//pegar elemento por id e adicionar texto onde esta guardado na date
+            })
+            .catch(error =>{//caso tenha um erro na requisicao
+                console.log("erro ao tentar retornar nome de usuario");
+            });
+    */</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
